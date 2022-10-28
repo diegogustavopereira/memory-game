@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Memória</title>
+</head>
+<body>
+
+    <article id="startScreen">
+        <h1>Jogo da Memória</h1>
+        <form>
+            <label>Qual é o seu nome?</label>
+            <input id="inputName" type="text" placeholder="Digite seu nome">
+            <button id="btnStart">Jogar!</button>
+        </form>
+    </article>
+
+    <article id="gameScreen" class="hide">
+        <section id="gameScore">
+            <p>Olá, <span id="name">nome do jogador</span>!</p>
+            <p>Você tem <span id="points">xx</span> pontos.</p>
+        </section>
+        <section id="board"></section>
+    </article>
+
+    <script src="./js/logic.js"></script> <!--primeiro a lógica-->
+    <script src="./js/dom.js"></script> <!--depois o DOM-->
+</body>
+</html>
+
+<!--https://github.com/tatialveso/memory-game-->
